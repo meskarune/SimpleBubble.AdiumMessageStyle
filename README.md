@@ -23,4 +23,4 @@ Todo:
 * CSS fade in animation
 * Custom font?
 
-Added inline image previews with [adium-inline-images](https://github.com/piranha/adium-inline-images adium-inline-images)
+Added inline image previews with [adium-inline-images](https://github.com/piranha/adium-inline-images)
