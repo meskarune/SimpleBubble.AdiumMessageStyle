@@ -1,0 +1,30 @@
+@import url("../main.css");
+
+.incoming, .outgoing {
+    background: #eee;
+    border: solid 1px #ccc;
+}
+.incoming:before, .outgoing:before {
+    border-color: transparent #ccc;
+}
+.incoming:after, .outgoing:after {
+    border-color: transparent #eee;
+}
+.alt {
+    right: .5em;
+}
+.in{
+    left: .5em;
+}
+.incoming {
+    float: right;
+}
+.incoming:before {
+    -webkit-transform:scale(-1,1);
+    left: 100%;
+    right: -1px;
+}
+.incoming:after {
+    -webkit-transform:scale(-1,1);
+    left: calc(100% - 2px);
+}
