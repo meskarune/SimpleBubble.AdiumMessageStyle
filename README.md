@@ -19,6 +19,8 @@ Copy the theme files there
 
 Todo:
 
-* Alternating Theme
+* Alternating Theme - done
 * CSS fade in animation
 * Custom font?
+
+Added inline image previews with [adium-inline-images](https://github.com/piranha/adium-inline-images adium-inline-images)
