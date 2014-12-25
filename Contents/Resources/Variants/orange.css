@@ -1,0 +1,22 @@
+@import url("../main.css");
+
+.incoming {
+    background: #ff9966;
+    border: solid 1px #ff6600;
+}
+.incoming:before {
+    border-color: transparent #ff6600;
+}
+.incoming:after {
+    border-color: transparent #ff9966;
+}
+.outgoing {
+    background: #eee;
+    border: solid 1px #ccc;
+}
+.outgoing:before {
+    border-color: transparent #ccc;
+}
+.outgoing:after {
+    border-color: transparent #eee;
+}

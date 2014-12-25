@@ -1,0 +1,21 @@
+@import url("../main.css");
+
+body {
+    background: #252527;
+}
+.time {
+    color: #efefef;
+}
+.status {
+    color: #ccc;
+}
+.incoming, .outgoing {
+    background: #eee;
+    border: solid 1px #ccc;
+}
+.incoming:before, .outgoing:before {
+    border-color: transparent #ccc;
+}
+.incoming:after, .outgoing:after {
+    border-color: transparent #eee;
+}

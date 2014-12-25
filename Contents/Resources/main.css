@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-bottom: .5em;
+}
+.chat {
+  width: 100%;
+  overflow: hidden;
+  padding: .5em;
+  position: relative;
+  font-size: 12px;
+  min-height: 56px;
+  margin-bottom: .5em;
+}
+.avatar, .bubble {
+  -webkit-border-radius: 5px;
+}
+.avatar {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.wrapper {
+  margin-left: 70px;
+  margin-right: 75px;
+}
+.bubble {
+  position: relative;
+  display: inline-block;
+  padding: .5em;
+  margin-top: 11px;
+}
+.bubble:before {
+  content: "";
+  position: absolute;
+  top: .3em;
+  left: -11px;
+  border-style: solid;
+  border-width: 8px 10px 8px 0;
+  display: block;
+  width: 0;
+  z-index: 0;
+}
+.bubble:after {
+  content: "";
+  position: absolute;
+  top: .3em;
+  left: -9px;
+  border-style: solid;
+  border-width: 8px 10px 8px 0;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+.time {
+  position: absolute;
+  right: .5em;
+  top: 25px;
+  opacity: .3;
+  text-transform: lowercase;
+  transition: opacity 500ms ease-in-out;
+}
+.chat:hover .time {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+.status {
+  opacity: .8;
+  text-align: center;
+}
