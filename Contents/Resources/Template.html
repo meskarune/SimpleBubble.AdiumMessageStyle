@@ -2,7 +2,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<base href="%@">
-	<script type="text/javascript" defer="defer">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" defer="defer">
 		// NOTE:
 		// Any percent signs in this file must be escaped!
 		// Use two escape signs (%%) to display it, this is passed through a format call!
@@ -41,6 +42,15 @@
 					// insert the documentFragment into the live DOM
 					appendElement(self.fragment);
 				}
+        // Display Image Links Inline
+        var elements = document.querySelectorAll('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"]'),
+          l = elements.length, i, current;
+        for(i=0; i<l; i++) {
+          current = elements[i];
+          var href = current.getAttribute('href');
+          current.innerHTML = '<img width="100" src="' + href + '" >';
+        }
+
 				alignChat(self.shouldScroll);
 				
 				// reset state to empty/non-coalescing
@@ -313,15 +323,8 @@
 				coalescedHTML = new CoalescedHTML();
 		}
 	</script>
-  <script src="javascript/inline-images.js"></script>
-  <!-- <script src="javascript/jquery.min.js"></script>
-  <script>
-  $('a[href$=".jpg"], a[href$=".png"], a[href$=".gif"]').each(function(){
-        $(this).html('<img width="150" src="' +
-                $(this).attr('href') + '" />');
-          });
-  </script> -->
-	<style type="text/css">
+  <!-- <script src="javascript/inline-images.js"></script> -->
+  	<style type="text/css">
 		.actionMessageUserName { display:none; }
 		.actionMessageBody:before { content:"*"; }
 		.actionMessageBody:after { content:"*"; }
