@@ -23,5 +23,3 @@ Todo:
 * CSS fade in animation
 * Custom font - done (currently Open Sans)
 * Display image links inline - done, might need some testing/work
-
-Added inline image previews with [adium-inline-images](https://github.com/piranha/adium-inline-images)
