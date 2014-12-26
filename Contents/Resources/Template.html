@@ -42,15 +42,15 @@
 					// insert the documentFragment into the live DOM
 					appendElement(self.fragment);
 				}
-        // Display Image Links Inline
-        var elements = document.querySelectorAll('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"]'),
-          l = elements.length, i, current;
-        for(i=0; i<l; i++) {
-          current = elements[i];
-          var href = current.getAttribute('href');
-          current.innerHTML = '<img width="100" src="' + href + '" >';
-        }
-
+				// Display Image Links Inline
+				var elements = document.querySelectorAll('a[href$=".png"], a[href$=".jpg"], a[href$=".gif"]'),
+					l = elements.length, i, current;
+				for(i=0; i<l; i++) {
+					current = elements[i];
+					var href = current.getAttribute('href');
+					current.innerHTML = '<img width="100" src="' + href + '" >';
+				}
+				
 				alignChat(self.shouldScroll);
 				
 				// reset state to empty/non-coalescing
@@ -111,7 +111,6 @@
 				}
 			}
 			
-			
 			// coalased analogs to the global functions
 			
 			this.append = function(html, shouldScroll) {
@@ -126,7 +125,7 @@
 				self.fragment.appendChild(node);
 				
 				node = null;
-
+				
 				setShouldScroll(shouldScroll);
 				self.coalesce();
 			}
@@ -156,7 +155,7 @@
 			}
 		}
 		var coalescedHTML;
-
+		
 		//Appending new content to the message view
 		function appendMessage(html) {
 			var shouldScroll;
@@ -323,8 +322,7 @@
 				coalescedHTML = new CoalescedHTML();
 		}
 	</script>
-  <!-- <script src="javascript/inline-images.js"></script> -->
-  	<style type="text/css">
+ 	<style type="text/css">
 		.actionMessageUserName { display:none; }
 		.actionMessageBody:before { content:"*"; }
 		.actionMessageBody:after { content:"*"; }
